@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartMentor - Student Community</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+  <style>
+        /* Custom Styling */
+        body {
+            background-color: #0791d6 !important;
+            color: black !important;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+   
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .post-card {
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .post-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .action-buttons .btn {
+            color: #007bff;
+        }
+
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .chatbot {
+            display: none;
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            overflow-y: auto;
+        }
+        .chatbot-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .chatbot-messages {
+            padding: 10px;
+        }
+        .chatbot-input {
+            padding: 10px;
+        }
+        .chatbot-input input {
+            width: 100%;
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .default-questions {
+            padding: 10px;
+            background: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+        .default-questions button {
+            margin: 5px 0;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .new-post-container {
+            margin-top: 20px;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .new-post-container input,
+        .new-post-container textarea {
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><span>Smart</span>Mentor</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+     
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="community.html" class="nav-link">Community</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link">Blogs</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+      </div>
+     </div>
+     </nav>
+    
+<br><br><br>
+<section class="container my-4">
+    <!-- Post Section -->
+    <div class="post-card p-3 bg-white">
+        <div class="post-header d-flex align-items-center">
+            <img src="images/bot.jpg" alt="User Profile">
+            <div class="ml-3">
+                <h6 class="mb-0">Avnish Kumar</h6>
+                <small>2 hrs ago</small>
+            </div>
+        </div>
+        <div class="post-body mt-3">
+            <p>Excited to be part of this amazing community! Let's share and learn together.</p>
+        </div>
+        <div class="action-buttons mt-3 d-flex justify-content-between">
+            <button class="btn btn-light like-button"><i class="fas fa-thumbs-up"></i> Like</button>
+            <button class="btn btn-light comment-button"><i class="fas fa-comment"></i> Comment</button>
+            <button class="btn btn-light share-button"><i class="fas fa-share"></i> Share</button>
+        </div>
+        <!-- Comment Section -->
+        <div class="comments mt-3">
+            <div class="d-flex align-items-center">
+                <input type="text" class="form-control" placeholder="Add a comment...">
+                <button class="btn btn-primary ml-2">Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- More posts can be added similarly -->
+</section>
+<br>
+
+<!-- New Post Form -->
+<section class="container my-4">
+    <div class="new-post-container">
+        <h4>Create a New Post</h4>
+        <input type="text" id="new-post-title" class="form-control" placeholder="Post Title" />
+        <textarea id="new-post-content" class="form-control" rows="4" placeholder="Write your post..."></textarea>
+        <button class="btn btn-primary" id="submit-post">Post</button>
+    </div>
+<br><br>
+ 
+    <div id="posts-container">
+        
+    </div>
+</section>
+
+<div class="chatbot-container">
+    <button class="btn btn-primary" id="chatbot-toggle"><i class="fas fa-robot"></i> Chat with Bot</button>
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            <h5>Community Chatbot</h5>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="bot-message">
+                <p>Hello! I’m here to help. You can ask me about the website features, community tips, and more.</p>
+            </div>
+        </div>
+
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Ask me something...">
+        </div>
+        <div class="default-questions">
+            <button class="default-question" data-question="What is this webpage?">What is this webpage?</button>
+            <button class="default-question" data-question="How do I post a comment?">How do I post a comment?</button>
+            <button class="default-question" data-question="How do I make friends?">How do I make friends?</button>
+        </div>
+    </div>
+</div>
+
+<footer class="ftco-footer ftco-no-pt">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">About</h2>
+            <p>Empowering Educators, Engaging Students, Elevating Learning—In Real Time.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Help Desk</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Customer Care</a></li>
+              <li><a href="#" class="py-2 d-block">Legal Help</a></li>
+              <li><a href="#" class="py-2 d-block">Services</a></li>
+              <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
+              <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
+              <li><a href="#" class="py-2 d-block">Call Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">AI Classroom Modules</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Curriculum Adherence Tracking</a></li>
+              <li><a href="#" class="py-2 d-block">Classroom Control Monitoring</a></li>
+              <li><a href="#" class="py-2 d-block">Student Engagement Analysis</a></li>
+              <li><a href="#" class="py-2 d-block">Real-Time Feedback for Teachers</a></li>
+
+
+            </ul>
+          </div>
+        </div>
+        
+      <div class="col-md pt-5">
+        <div class="ftco-footer-widget pt-md-5 mb-4">
+         <h2 class="ftco-heading-2">Have a Questions?</h2>
+         <div class="block-23 mb-3">
+           <ul>
+             <li><span class="icon fa fa-map-marker"></span><span class="text">Iter Bhubanswer </span></li>
+             <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+91 90313 58194</span></a></li>
+             <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">ankit.iter071105.com</span></a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12 text-center">
+  
+      <p>
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Design <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.linkedin.com/in/ankit071105/" target="_blank">Ankit</a>
+       </p>
+      </div>
+    </div>
+  </div>
+  </footer>
+<!-- jQuery, Bootstrap, and JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    let posts = [];
+
+    // Function to render posts on the page
+    function renderPosts() {
+        const postsContainer = $('#posts-container');
+        postsContainer.empty();
+        
+        posts.forEach((post, postIndex) => {
+            let postHTML = `
+                <div class="post-card p-3 bg-white" id="post-${postIndex}">
+                    <div class="post-header d-flex align-items-center">
+                        <img src="images/bot.jpg" alt="User Profile">
+                        <div class="ml-3">
+                            <h6 class="mb-0">${post.author}</h6>
+                            <small>${post.time}</small>
+                        </div>
+                    </div>
+                    <div class="post-body mt-3">
+                        <h5>${post.title}</h5>
+                        <p>${post.content}</p>
+                    </div>
+                    <div class="action-buttons mt-3 d-flex justify-content-between">
+                        <button class="btn btn-light like-button"><i class="fas fa-thumbs-up"></i> Like</button>
+                        <button class="btn btn-light comment-button" onclick="toggleCommentSection(${postIndex})"><i class="fas fa-comment"></i> Comment</button>
+                    </div>
+                    <div class="comments-section" id="comments-section-${postIndex}" style="display:none;">
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control comment-input" id="comment-input-${postIndex}" placeholder="Add a comment...">
+                            <button class="btn btn-primary ml-2" onclick="addComment(${postIndex})">Post</button>
+                        </div>
+                        <div class="comments-list" id="comments-list-${postIndex}">
+                            <!-- Comments will be added here -->
+                        </div>
+                    </div>
+                </div>
+            `;
+            postsContainer.append(postHTML);
+
+            // Render existing comments
+            post.comments.forEach((comment) => {
+                $(`#comments-list-${postIndex}`).append(`<div class="comment"><p>${comment}</p></div>`);
+            });
+        });
+    }
+
+    // Handle new post submission
+    $('#submit-post').click(function() {
+        const title = $('#new-post-title').val();
+        const content = $('#new-post-content').val();
+        const time = new Date().toLocaleString();
+
+        if (title && content) {
+            const newPost = {
+                author: "Ankit Kumar",
+                title: title,
+                content: content,
+                time: time,
+                comments: []
+            };
+            posts.push(newPost);
+            $('#new-post-title').val('');
+            $('#new-post-content').val('');
+            renderPosts();
+        } else {
+            alert("Please fill in both title and content for the post.");
+        }
+    });
+
+    // Toggle comment section visibility
+    function toggleCommentSection(postIndex) {
+        $(`#comments-section-${postIndex}`).toggle();
+    }
+
+    // Add comment to a post
+    function addComment(postIndex) {
+        const comment = $(`#comment-input-${postIndex}`).val();
+        if (comment) {
+            posts[postIndex].comments.push(comment);
+            $(`#comments-list-${postIndex}`).append(`<div class="comment"><p>${comment}</p></div>`);
+            $(`#comment-input-${postIndex}`).val('');
+        }
+    }
+
+    // Initial render of posts
+    renderPosts();
+
+
+</script>
+<script>
+    const defaultResponses = {
+        "Hello": "Hi there! How can I assist you today?",
+        "How are you?": "I'm just a bot, but thanks for asking! How can I help you?",
+        "What is this webpage?": "This is a community page where students can connect, share, and interact with each other.",
+        "How do I post a comment?": "To post a comment, type your message in the comment box below a post and click 'Post'.",
+        "How do I make friends?": "You can interact with others through comments, likes, and shared interests!"
+    };
+
+    // Chatbot toggle
+    $('#chatbot-toggle').click(function() {
+        $('#chatbot').toggle();
+    });
+
+    // Handle chatbot input
+    $('#chatbot-input').keypress(function(e) {
+        if (e.which === 13) {
+            const userInput = $(this).val();
+            $('#chatbot-messages').append('<div class="user-message"><p>' + userInput + '</p></div>');
+            $(this).val('');
+            
+            const response = defaultResponses[userInput] || "Sorry, I didn't quite understand that. Can you rephrase?";
+            $('#chatbot-messages').append('<div class="bot-message"><p>' + response + '</p></div>');
+            $('#chatbot-messages').scrollTop($('#chatbot-messages')[0].scrollHeight);
+        }
+    });
+
+    // Handle default question buttons
+    $('.default-question').click(function() {
+        const question = $(this).data('question');
+        $('#chatbot-messages').append('<div class="user-message"><p>' + question + '</p></div>');
+        const response = defaultResponses[question] || "Sorry, I didn’t quite understand that. Can you rephrase?";
+        $('#chatbot-messages').append('<div class="bot-message"><p>' + response + '</p></div>');
+        $('#chatbot-messages').scrollTop($('#chatbot-messages')[0].scrollHeight);
+    });
+</script>
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
