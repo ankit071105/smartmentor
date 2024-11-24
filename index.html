@@ -1,509 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>SmartMentor</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Rescue Ring</title>
 
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+    <link rel="shortcut icon" href="assets/images/about-icon-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+<style>
+
+#connect-bluetooth, #send-alert {
+    width: 200px;
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.display-4 {
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
 </head>
+
 <body>
- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-   <div class="container">
-     <a class="navbar-brand" href="index.html"><span>Smart</span>Mentor</a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="oi oi-menu"></span> Menu
-   </button>
 
-   <div class="collapse navbar-collapse" id="ftco-nav">
-       <ul class="navbar-nav ml-auto">
-         <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-         <li class="nav-item"><a href="community.html" class="nav-link">Community</a></li>
-         <li class="nav-item"><a href="live.html" class="nav-link">live lecture</a></li>
-         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-     </ul>
- </div>
-</div>
-</nav>
-
-<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-      <div class="col-md-7 ftco-animate">
-        <span class="subheading">Welcome to SmartMentor</span>
-        <h1 class="mb-4">Your Ultimate Partner in Smart Learning</h1>
-        <p class="caps">
-Transform the way you teach and learn with real-time insights, powerful AI tools, and an engaging platform designed for modern educators and students alike.</p>
-        <p class="mb-0"> <a href="#" class="btn btn-white">Learn More</a></p>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-</div>
-</div>
-</div>
-
-<section class="ftco-section ftco-no-pb ftco-no-pt">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-7"></div>
-         <div class="col-md-5 order-md-last">
-          <div class="login-wrap p-4 p-md-5">
-              <h3 class="mb-4">Register Now</h3>
-              <form action="#" class="signup-form">
-                 <div class="form-group">
-                    <label class="label" for="name">Full Name</label>
-                    <input type="text" class="form-control" placeholder="Desi boy">
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            Rescue Ring
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
+                            <li class="scroll-to-section"><a href="#test" class="menu-item">Test Us</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:;">Know Us</a>
+                                <ul>
+                                    <li><a href="#promotion" class="menu-item">Why Us</a></li>
+                                    <li><a href="#Analysis" class="menu-item">Analysis</a></li>
+                                    <li><a href="#testimonials" class="menu-item">Reviews</a></li>
+                               
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item" >Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
                 </div>
-                <div class="form-group">
-                    <label class="label" for="email">Email Address</label>
-                    <input type="text" class="form-control" placeholder="desiboy@gmail.com">
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="welcome-area" id="welcome">
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>Stay Safe with <em>RescueRing</em></h1>
+                        <p>
+                            RescueRing is a revolutionary emergency alert app that connects a smart ring 
+                            to notify nearby users within 1000 meters during a crisis. Leveraging advanced 
+                            Bluetooth connectivity and real-time location tracking, it ensures prompt help is 
+                            always just a tap away.
+                        </p>
+                       
+                        <a href="#about" class="main-button-slider">LEARN MORE</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                 <label class="label" for="password">Password</label>
-                 <input id="password-field" type="password" class="form-control" placeholder="Password">
-             </div>
-             <div class="form-group">
-                 <label class="label" for="password">Confirm Password</label>
-                 <input id="password-field" type="password" class="form-control" placeholder="Confirm Password">
-             </div>
-             <div class="form-group d-flex justify-content-end mt-4">
-                 <button type="submit" class="btn btn-primary submit"><span class="fa fa-paper-plane"></span></button>
-             </div>
-         </form>
-         <p class="text-center">Already have an account? <a href="#signin">Sign In</a></p>
-     </div>
- </div>
-</div>
-</div>
-</section>
-
-<section class="ftco-section">
-   <div class="container">
-      <div class="row justify-content-center pb-4">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading">Start Learning Today</span>
-            <h2 class="mb-4">Intelligent Classroom Management Suite</h2>
+            </div>
         </div>
+        <!-- ***** Header Text End ***** -->
     </div>
-    <div class="row justify-content-center">
-     <div class="col-md-3 col-lg-2" style="margin-right: 14px;">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/work-1.jpg);">
-           <div class="text w-100 text-center">
-              <h3>Curriculum Adherence Tracking</h3>
-     
-          </div>
-      </a>
-  </div>
-  <div class="col-md-3 col-lg-2" style="margin-right: 14px;">
-    <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/work-9.jpg);">
-       <div class="text w-100 text-center">
-          <h3>Classroom Control Monitoring</h3>
-
-      </div>
-  </a>
-</div>
-<div class="col-md-3 col-lg-2" style="margin-right: 15px;">
-    <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/work-3.jpg);">
-       <div class="text w-100 text-center">
-          <h3>Student Engagement Analysis</h3>
-      </div>
-  </a>
-</div>
-<div class="col-md-3 col-lg-2" style="margin-right: 15px;">
-    <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/work-5.jpg);">
-       <div class="text w-100 text-center">
-          <h3>Real-Time Feedback for Teachers</h3>
-
-      </div>
-  </a>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<section class="ftco-section bg-light" id="Ai">
-  <div class="container">
-     <div class="row justify-content-center pb-4">
-        <div class="col-md-12 heading-section text-center">
-           <span class="subheading">Enhance Classroom Management</span>
-           <h2 class="mb-4">Explore Our AI Modules</h2>
-        </div>
-     </div>
-     <div class="row">
-        <!-- Module Card 1 -->
-        <div class="col-md-4">
-           <div class="project-wrap">
-              <a href="#" class="img" style="background-image: url(images/ai1.jpeg);">
-                 <span class="price">Curriculum Adherence</span>
-              </a>
-              <div class="text p-4">
-                 <h3><a href="#">Track Curriculum Adherence in Real Time</a></h3>
-                 <p>Monitor lesson content to ensure alignment with the established curriculum, keeping learning goals on track.</p>
-                 <ul class="d-flex justify-content-between">
-                    <li><span class="flaticon-checklist"></span>1200+ Sessions</li>
-                    <li class="price">Included</li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-
-        <!-- Module Card 2 -->
-        <div class="col-md-4">
-           <div class="project-wrap">
-              <a href="#" class="img" style="background-image: url(images/ai2.jpeg);">
-                 <span class="price">Classroom Control</span>
-              </a>
-              <div class="text p-4">
-                 <h3><a href="#">Real-time Classroom Control Insights</a></h3>
-                 <p>Identify signs of disorder or disengagement to help teachers manage classroom dynamics effectively.</p>
-                 <ul class="d-flex justify-content-between">
-                    <li><span class="flaticon-classroom"></span>850+ Reports</li>
-                    <li class="price">Included</li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-
-        <!-- Module Card 3 -->
-        <div class="col-md-4">
-           <div class="project-wrap">
-              <a href="#" class="img" style="background-image: url(images/ai4.jpeg);">
-                 <span class="price">Student Engagement</span>
-              </a>
-              <div class="text p-4">
-                 <h3><a href="#">Analyze Student Engagement Levels</a></h3>
-                 <p>Use emotion analysis and facial recognition to track student participation and interest throughout lessons.</p>
-                 <ul class="d-flex justify-content-between">
-                    <li><span class="flaticon-engagement"></span>700+ Students</li>
-                    <li class="price">Included</li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-
-        <!-- Module Card 4 -->
-        <div class="col-md-4">
-           <div class="project-wrap">
-              <a href="#" class="img" style="background-image: url(images/ai5.jpeg);">
-                 <span class="price">Feedback for Teachers</span>
-              </a>
-              <div class="text p-4">
-                 <h3><a href="#">Instant Feedback and Suggestions</a></h3>
-                 <p>Provide real-time suggestions to teachers based on observed classroom behavior, helping them adjust on the spot.</p>
-                 <ul class="d-flex justify-content-between">
-                    <li><span class="flaticon-feedback"></span>500+ Teachers</li>
-                    <li class="price">Included</li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-
-        <!-- Module Card 5 -->
-        <div class="col-md-4">
-           <div class="project-wrap">
-              <a href="#" class="img" style="background-image: url(images/ai6.jpeg);">
-                 <span class="price">Performance Analytics</span>
-              </a>
-              <div class="text p-4">
-                 <h3><a href="#">Comprehensive Analytics Dashboard</a></h3>
-                 <p>Gain insights on class performance trends, student engagement, and teacher effectiveness over time.</p>
-                 <ul class="d-flex justify-content-between">
-                    <li><span class="flaticon-analytics"></span>1200+ Reports</li>
-                    <li class="price">Included</li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-
-        <!-- Module Card 6 -->
-        <div class="col-md-4">
-           <div class="project-wrap">
-              <a href="#" class="img" style="background-image: url(images/ai3.jpeg);">
-                 <span class="price">Behavioral Insights</span>
-              </a>
-              <div class="text p-4">
-                 <h3><a href="#">Behavioral Analysis for Improved Learning</a></h3>
-                 <p>Track student and teacher behaviors that impact learning outcomes, helping to create a positive learning environment.</p>
-                 <ul class="d-flex justify-content-between">
-                    <li><span class="flaticon-behavior"></span>900+ Insights</li>
-                    <li class="price">Included</li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-</section>
-
-<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);">
-  <div class="overlay"></div>
-  <div class="container">
-   <div class="row">
-    <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-      <div class="block-18 d-flex align-items-center">
-       <div class="icon"><span class="flaticon-online"></span></div>
-       <div class="text">
-        <strong class="number" data-number="1000">100</strong>
-        <span>Schools</span>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-    <div class="block-18 d-flex align-items-center">
-     <div class="icon"><span class="flaticon-graduated"></span></div>
-     <div class="text">
-      <strong class="number" data-number="45000">20000</strong>
-      <span>Students Enrolled</span>
-    </div>
-  </div>
- </div>
- <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-  <div class="block-18 d-flex align-items-center">
-   <div class="icon"><span class="flaticon-instructor"></span></div>
-   <div class="text">
-    <strong class="number" data-number="10000">0</strong>
-    <span>Experts Instructors</span>
-  </div>
- </div>
- </div>
- <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-  <div class="block-18 d-flex align-items-center">
-   <div class="icon"><span class="flaticon-tools"></span></div>
-   <div class="text">
-    <strong class="number" data-number="300">0</strong>
-    <span>Live Class</span>
-  </div>
- </div>
- </div>
- </div>
- </div>
- </section>
-
-<!-- Testimonials Section -->
-<!-- <section class="ftco-section testimony-section bg-light">
-  <div class="overlay" style="background-image: url(images/bg_2.jpg);"></div>
-  <div class="container">
-     <div class="row pb-4">
-        <div class="col-md-7 heading-section">
-           <span class="subheading">Testimonial</span>
-           <h2 class="mb-4">What Educators Are Saying</h2>
-        </div>
-     </div>
-     <div class="row">
-        <div class="col-md-12">
-           <div class="carousel-testimony owl-carousel">
-              <div class="item">
-                 <div class="testimony-wrap py-4">
-                    <div class="text">
-                       <p class="star">
-                          <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-                       </p>
-                       <p class="mb-4">“The AI insights have transformed my teaching approach. I'm able to respond in real time to student engagement, which has made lessons more interactive.”</p>
-                       <div class="d-flex align-items-center">
-                          <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                          <div class="pl-3">
-                             <p class="name">Emily Johnson</p>
-                             <span class="position">High School Teacher</span>
-                          </div>
-                       </div>
+    
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>01</h2>
+                            <img src="assets/images/features-icon-2.png" alt="">
+                            <h4>Emergency Alert System</h4>
+                            <p> Instantly notify users within a 1000-meter radius in case of emergencies. The system ensures alerts reach those who can provide immediate help.</p>
+                            <a href="#testimonials" class="main-button">
+                                Read More
+                            </a>
+                        </div>
                     </div>
-                 </div>
-              </div>
-              <div class="item">
-                 <div class="testimony-wrap py-4">
-                    <div class="text">
-                       <p class="star">
-                          <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-                       </p>
-                       <p class="mb-4">“We can now track adherence to curriculum standards effortlessly. It helps ensure every student receives the complete lesson plan.”</p>
-                       <div class="d-flex align-items-center">
-                          <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                          <div class="pl-3">
-                             <p class="name">James Scott</p>
-                             <span class="position">School Principal</span>
-                          </div>
-                       </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>02</h2>
+                            <img src="assets/images/features-icon-1.png" alt="">
+                            <h4>Bluetooth Connectivity</h4>
+                            <p>Seamlessly connect your RescueRing to the app using Bluetooth, enabling real-time communication and responsiveness.
+                            </p>
+                            <a href="#testimonials" class="main-button">
+                                Discover More
+                            </a>
+                        </div>
                     </div>
-                 </div>
-              </div>
-              <!-- Add more testimonial items as needed -->
-           <!-- </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>03</h2>
+                            <img src="assets/images/location.png" alt="">
+                            <h4>Location-Based Filtering</h4>
+                            <p>Smart algorithms block redundant notifications for users within a 50-meter radius while ensuring accurate location sharing for those further out.</p>
+                            <a href="#testimonials" class="main-button">
+                                More Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-     </div>
-  </div>
-</section> -->
+    </section>
 
-<!-- Blog Section -->
-<section class="ftco-section bg-light" id="Blogs">
-  <div class="container">
-     <div class="row justify-content-center pb-4">
-        <div class="col-md-12 heading-section text-center">
-           <span class="subheading">Our Blog</span>
-           <h2 class="mb-4">Recent Insights</h2>
+    <div class="left-image-decor"></div>
+    <section class="section" id="promotion">
+        <div class="container">
+            <div class="row">
+                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <ul>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <img src="assets/images/about-icon-01.png" alt="" width="100px" style="border-radius: 25px;">
+                            <div class="text">
+                                <h4>Your Safety, Just a Tap Away</h4>
+                                <p>RescueRing combines cutting-edge Bluetooth technology with a touch-enabled smart ring to empower users during emergencies. Simply tap the ring to broadcast your location and request help instantly. <a
+                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> us for
+                            additional licensing of our template or to get a PSD file.</p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+                            <img src="assets/images/about-icon-02.png" alt="" width="100px" style="border-radius: 25px;">
+                            <div class="text">
+                                <h4>Why Choose RescueRing?</h4>
+                                <p> Notify nearby users within a <a rel="nofollow"
+                                    href="">1000-meter </a>radius instantly during emergencies. Every second counts, and RescueRing ensures quick alerts to reduce response time.</p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                            <img src="assets/images/about-icon-03.png" alt="" width="100px" style="border-radius: 25px;">
+                            <div class="text">
+                                <h4>Notification Optimization</h4>
+                                <p>Our algorithms intelligently block redundant alerts for users within 50 meters, ensuring a streamlined and effective response.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-     </div>
-     <div class="row d-flex">
-        <div class="col-lg-4">
-           <div class="blog-entry">
-              <a href="#" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
-              <div class="text d-block">
-                 <div class="meta">
-                    <p>
-                       <a href="#"><span class="fa fa-calendar mr-2"></span>Nov. 1, 2024</a>
-                       <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                       <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 8</a>
-                    </p>
-                 </div>
-                 <h3 class="heading"><a href="#">How AI Empowers Real-Time Teaching Adjustments</a></h3>
-                 <p>Learn how AI-driven insights are revolutionizing classroom dynamics and improving educational outcomes for students.</p>
-                 <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-              </div>
-           </div>
-        </div>
-        <div class="col-lg-4">
-           <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
-              <div class="text d-block">
-                 <div class="meta">
-                    <p>
-                       <a href="#"><span class="fa fa-calendar mr-2"></span>Oct. 25, 2024</a>
-                       <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                       <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 5</a>
-                    </p>
-                 </div>
-                 <h3 class="heading"><a href="#">Boosting Student Engagement through AI-Enhanced Teaching</a></h3>
-                 <p>Discover how AI helps teachers actively track and respond to student engagement, making learning more impactful and enjoyable.</p>
-                 <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-              </div>
-           </div>
-        </div>
-        <div class="col-lg-4">
-           <div class="blog-entry">
-              <a href="#" class="block-20" style="background-image: url('images/image_3.jpg');"></a>
-              <div class="text d-block">
-                 <div class="meta">
-                    <p>
-                       <a href="#"><span class="fa fa-calendar mr-2"></span>Oct. 10, 2024</a>
-                       <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                       <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 2</a>
-                    </p>
-                 </div>
-                 <h3 class="heading"><a href="#">Enhancing Curriculum Adherence with AI</a></h3>
-                 <p>AI ensures that teachers adhere to curriculum standards, providing consistency and reliability in education.</p>
-                 <p><a href="#" class="btn btn-secondary py-2 px-3">Read more</a></p>
-              </div>
-           </div>
-        </div>
-
-     </div>
-  </div>
-</section>
-
-
-
-<footer class="ftco-footer ftco-no-pt">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md pt-5">
-          <div class="ftco-footer-widget pt-md-5 mb-4">
-            <h2 class="ftco-heading-2">About</h2>
-            <p>Empowering Educators, Engaging Students, Elevating Learning—In Real Time.</p>
-            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-              <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md pt-5">
-          <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-            <h2 class="ftco-heading-2">Help Desk</h2>
-            <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">Customer Care</a></li>
-              <li><a href="#" class="py-2 d-block">Legal Help</a></li>
-              <li><a href="#" class="py-2 d-block">Services</a></li>
-              <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-              <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-              <li><a href="#" class="py-2 d-block">Call Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md pt-5">
-          <div class="ftco-footer-widget pt-md-5 mb-4">
-            <h2 class="ftco-heading-2">AI Classroom Modules</h2>
-            <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">Curriculum Adherence Tracking</a></li>
-              <li><a href="#" class="py-2 d-block">Classroom Control Monitoring</a></li>
-              <li><a href="#" class="py-2 d-block">Student Engagement Analysis</a></li>
-              <li><a href="#" class="py-2 d-block">Real-Time Feedback for Teachers</a></li>
-
-
-            </ul>
-          </div>
-        </div>
-        
-      <div class="col-md pt-5">
-        <div class="ftco-footer-widget pt-md-5 mb-4">
-         <h2 class="ftco-heading-2">Have a Questions?</h2>
-         <div class="block-23 mb-3">
-           <ul>
-             <li><span class="icon fa fa-map-marker"></span><span class="text">Iter Bhubanswer </span></li>
-             <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+91 90313 58194</span></a></li>
-             <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">ankit.iter071105.com</span></a></li>
-           </ul>
-         </div>
-       </div>
-     </div>
-   </div>
-   <div class="row">
-    <div class="col-md-12 text-center">
-  
-      <p>
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Design <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.linkedin.com/in/ankit071105/" target="_blank">Ankit</a>
-       </p>
-      </div>
+    </section>
+    <div class="container text-center mt-5" id="test">
+        <h1 class="display-4">RescueRing</h1>
+        <p class="lead">Connect your safety ring and stay alert during emergencies.</p>
+        <br><br>
+        <button id="connect-bluetooth" class="btn btn-primary mb-3">Connect to Bluetooth</button>
+        <button id="send-alert" class="btn btn-danger mb-3">Urgent: Need Help</button>
+    
     </div>
-  </div>
-  </footer>
 
+    <div class="container mt-5" id="Analysis">
+        <h2 class="text-center">Impact Statistics</h2>
+        <div class="row align-items-center mt-4">
+            <!-- Chart Column -->
+            <div class="col-lg-6 col-md-12">
+                <canvas id="survey-chart" width="400" height="200"></canvas>
+            </div>
+    
+            <!-- Explanation Column -->
+            <div class="col-lg-6 col-md-12">
+                <h4>Understanding the Data</h4>
+                <p>
+                    The graph represents the results of a recent survey conducted to measure the need and effectiveness of RescueRing:
+                </p>
+                <ul>
+                    <li><strong>65%</strong> of respondents felt safer after using RescueRing.</li>
+                    <li><strong>20%</strong> believe RescueRing's alert system significantly reduces response times during emergencies.</li>
+                    <li><strong>10%</strong> appreciated the ease of connectivity and use of the app and ring.</li>
+                    <li><strong>5%</strong> reported other positive impacts, including helping strangers in need.</li>
+                </ul>
+                <p>
+                    These insights demonstrate the growing demand for real-time emergency response systems and highlight RescueRing’s pivotal role in improving community safety.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Overall Summary -->
+        <div class="mt-4">
+            <h4 class="text-center">Overall Summary</h4>
+            <p class="text-center">
+                RescueRing has proven to be a valuable tool for individuals and communities. The survey results show that a majority of users feel more secure and empowered with RescueRing, 
+                reinforcing its importance as a personal safety device. With its intuitive design and life-saving features, RescueRing is revolutionizing the way emergencies are handled.
+            </p>
+        </div>
+    </div>
+    
+    <script >
+        // Bluetooth connection
+document.getElementById('connect-bluetooth').addEventListener('click', async () => {
+    try {
+        const device = await navigator.bluetooth.requestDevice({
+            acceptAllDevices: true
+        });
+        console.log('Connected to:', device.name);
+        alert('Bluetooth Connected: ' + device.name);
+    } catch (error) {
+        alert('Bluetooth connection failed.');
+    }
+});
 
+// Send emergency alert
+document.getElementById('send-alert').addEventListener('click', () => {
+    // Fetch user location and send data to backend
+    fetch('https://api.ipinfo.info/115.242.248.226?access_key=46fc888e3d959827b5a90f5b1a945025')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Location:', data);
+            alert('Emergency alert sent to nearby users.');
+        })
+        .catch(error => console.error('Error:', error));
+});
 
-<!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+// Survey chart
+const ctx = document.getElementById('survey-chart').getContext('2d');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Very Useful', 'Somewhat Useful', 'Not Useful'],
+        datasets: [{
+            label: '# of Responses',
+            data: [70, 20, 10],
+            backgroundColor: ['#4CAF50', '#FFC107', '#F44336']
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
 
+    </script>
+    <div class="right-image-decor"></div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
-<script src="js/scrollax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-<script src="js/google-map.js"></script>
-<script src="js/main.js"></script>
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="center-heading">
+                        <h2>What They Think <em>About Us</em></h2>
+                        <p>Saving lives, one ring at a time. Hear from users who’ve experienced RescueRing firsthand.</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/2.png" alt="Author One" style="border-radius: 50%; width: 200px; height: 130px;"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Avnish Kumar</h4>
+                                <p>“RescueRing gave me peace of mind during my morning runs. Knowing that help is just a tap away is a game-changer.”</p>
+                                <span>Smart Bloom - CEO</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/3.png" alt="Second Author" style="border-radius: 50%; width: 200px; height: 130px;"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Ankit Kumar</h4>
+                                <p>“he alert system worked flawlessly during an emergency drill. It's an essential tool for every household!”</p>
+                                <span>Web Analyst</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/4.png" alt="Author Third" style="border-radius: 50%; width: 200px; height: 130px;"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Aman Kumar</h4>
+                                <p>“RescueRing has been a game-changer for our neighborhood. During a community event, someone fainted, and I was able to alert nearby volunteers instantly. Help arrived in under 2 minutes. This technology is a must-have for everyone!”</p>
+                                <span>Community Volunteer</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/1.png" alt="Fourth Author" style="border-radius: 50%; width: 200px; height: 130px;"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Saloni Singh</h4>
+                                <p>"As a student living far from home, I always felt anxious about personal safety. RescueRing made me feel secure, knowing I could alert others during emergencies. Once, I used it to help someone injured in a cycling accident—it felt amazing to be able to assist so quickly."</p>
+                                <span>College Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact-us">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact-form">
+                            <form id="contact" action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+
+                                        <fieldset>
+                                        
+                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
+                                                style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
+                                                required="" style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
+                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Send Message
+                                                Now</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
+                        <h2> Get In Touch with <em>RescueRing </em></h2>
+                        <p>RescueRing is built with your safety in mind. For feedback, inquiries, or partnerships, drop us a message. We’re committed to improving emergency response for everyone. <a
+                                rel="nofollow" href="#" target="_parent">contact</a> page
+                            for more detail.</p>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright &copy; 2024 Rescue Ring
+                        | Designed by <a rel="nofollow" href="https://www.linkedin.com/in/ankit071105/">Ankit Kumar</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
 
 </body>
 </html>
